@@ -7,12 +7,12 @@
   <meta name="description" content="Professional air duct cleaning, dryer vent cleaning, and pressure washing in Northern Virginia." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Clean geometric font similar to reference -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Headline/body pair that matches the reference feel more closely -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top bar -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="/">Titan Leclair</a>
@@ -20,6 +20,7 @@
         <a href="#air-duct">Air Duct Cleaning</a>
         <a href="#dryer-vent">Dryer Vent Cleaning</a>
         <a href="#pressure-washing">Pressure Washing</a>
+        <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
         <a class="btn btn-primary btn-call" href="tel:7033867924">703-386-7924</a>
       </nav>
@@ -27,36 +28,34 @@
     </div>
   </header>
 
-  <!-- HERO: two columns like the reference -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
         <span class="pill">Breathe clean air with Titan Leclair</span>
         <h1>Air Duct & Dryer Vent Cleaning</h1>
         <p class="lead">
-          Premium, professional cleaning for healthier air and better HVAC efficiency
-          throughout Fairfax and Northern Virginia. Same-day appointments available.
+          Premium cleaning for healthier air and better HVAC efficiency across Fairfax & Northern Virginia.
         </p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="#quote">Request Quote</a>
           <a class="btn btn-outline" href="tel:7033867924">Call 703-386-7924</a>
         </div>
-
         <ul class="hero-points">
           <li>Removes dust, allergens & pet hair</li>
           <li>Helps with asthma & sinus issues</li>
           <li>Improves HVAC efficiency & airflow</li>
-          <li>Video inspection on request</li>
+          <li>Video inspection available</li>
         </ul>
       </div>
 
       <div class="hero-media">
         <img
           src="https://images.unsplash.com/photo-1505692794403-34d4982f88aa?q=80&w=1600&auto=format&fit=crop"
-          alt="Clean living room air quality" />
+          alt="Clean home interior">
       </div>
 
-      <!-- Quote form (right column on desktop, stacked on mobile) -->
+      <!-- Quote card on the right -->
       <aside id="quote" class="quote-card">
         <h3>Free Quote</h3>
         <form class="quote-form" name="quote" method="POST" data-netlify="true">
@@ -84,17 +83,17 @@
     </div>
   </section>
 
-  <!-- Trust badges / quick stats -->
+  <!-- Quick badges -->
   <section class="badges">
     <div class="container badges-grid">
       <div class="badge"><strong>Local</strong><span>Fairfax, VA</span></div>
-      <div class="badge"><strong>Insured</strong><span>Professional service</span></div>
-      <div class="badge"><strong>Video</strong><span>Inspection available</span></div>
+      <div class="badge"><strong>Insured</strong><span>Pro service</span></div>
+      <div class="badge"><strong>Video</strong><span>Inspection on request</span></div>
       <div class="badge"><strong>5-Star</strong><span>Customer care</span></div>
     </div>
   </section>
 
-  <!-- Services (like reference blocks) -->
+  <!-- Services -->
   <section class="services container">
     <h2 class="section-title">Our Services</h2>
 
@@ -104,7 +103,7 @@
       </div>
       <div class="service-copy">
         <h3>Air Duct Cleaning</h3>
-        <p>Full-system cleaning (supply & return lines, trunk, blower & plenum). We use powerful equipment and careful containment to keep your home dust-free.</p>
+        <p>Supply & return lines, trunks, blower & plenum. Powerful vacuums and careful containment to keep your home clean.</p>
         <a class="btn text-link" href="#quote">Get a quote →</a>
       </div>
     </div>
@@ -115,7 +114,7 @@
       </div>
       <div class="service-copy">
         <h3>Dryer Vent Cleaning</h3>
-        <p>Reduce fire risk and dry faster. We clear lint blockages from the lint trap to the exterior termination—and verify strong airflow on completion.</p>
+        <p>Reduce fire risk and dry faster. Full run cleared from lint trap to exterior termination; airflow verified.</p>
         <a class="btn text-link" href="#quote">Get a quote →</a>
       </div>
     </div>
@@ -126,13 +125,59 @@
       </div>
       <div class="service-copy">
         <h3>Pressure Washing</h3>
-        <p>House wash, driveways, and decks. Safe, even finishes using pro detergents and controlled pressure. Seasonal availability.</p>
+        <p>House wash, driveways, decks. Safe detergents, controlled pressure, even finishes. Seasonal availability.</p>
         <a class="btn text-link" href="#quote">Get a quote →</a>
       </div>
     </div>
   </section>
 
-  <!-- Why choose us -->
+  <!-- Reviews / Widget area -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2 class="section-title">What Customers Say</h2>
+
+      <!-- If you use Trustpilot or Elfsight, paste their script into the widget div below. -->
+      <div class="reviews-widget" id="reviews-widget">
+        <!-- Placeholder cards (so it doesn’t look empty before you connect a real widget) -->
+        <div class="card">
+          ★★★★★ <strong>Excellent service</strong>
+          <p>Super clean, fast, and professional. Breathing easier already.</p>
+          <span>— Homeowner in Fairfax</span>
+        </div>
+        <div class="card">
+          ★★★★★ <strong>Dryer vent fixed</strong>
+          <p>Lint blockage cleared and my dryer finally dries in one cycle.</p>
+          <span>— Townhome owner</span>
+        </div>
+        <div class="card">
+          ★★★★★ <strong>Great communication</strong>
+          <p>On time and tidy. Loved the video inspection.</p>
+          <span>— Springfield</span>
+        </div>
+      </div>
+
+      <!-- Example Trustpilot hook (replace data-* once you have your business unit id)
+      <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="YOUR_ID" data-style-height="240" data-style-width="100%" data-theme="light"></div>
+      <script async src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"></script>
+      -->
+    </div>
+  </section>
+
+  <!-- Interactive Map -->
+  <section class="map">
+    <div class="container">
+      <h2 class="section-title">Service Area</h2>
+      <div class="map-wrap">
+        <iframe
+          title="Titan Leclair on Google Maps"
+          src="https://www.google.com/maps?q=9480+Main+Street,+Suite+1218,+Fairfax,+VA+22031&output=embed"
+          loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p class="map-note">Based in Fairfax. Serving Northern Virginia.</p>
+    </div>
+  </section>
+
+  <!-- Why / Process -->
   <section class="why">
     <div class="container">
       <h2 class="section-title">Why Choose Titan Leclair</h2>
@@ -145,37 +190,17 @@
     </div>
   </section>
 
-  <!-- Process like reference -->
   <section class="process container">
     <h2 class="section-title">How It Works</h2>
     <ol class="steps">
       <li><strong>Inspect</strong><span>We assess your system and explain the plan.</span></li>
       <li><strong>Contain</strong><span>Protective covers and negative air where needed.</span></li>
-      <li><strong>Clean</strong><span>Agitation + vacuum to remove dust and debris.</span></li>
-      <li><strong>Verify</strong><span>Video/airflow check and tidy clean-up.</span></li>
+      <li><strong>Clean</strong><span>Agitation + vacuum remove dust and debris.</span></li>
+      <li><strong>Verify</strong><span>Video/airflow check and tidy cleanup.</span></li>
     </ol>
   </section>
 
-  <!-- FAQ -->
-  <section class="faq container">
-    <h2 class="section-title">FAQ</h2>
-    <div class="accordion">
-      <div class="item">
-        <button class="acc-btn">How often should ducts be cleaned?</button>
-        <div class="acc-panel"><p>Typically every 3–5 years, or sooner with pets, allergies, or renovations.</p></div>
-      </div>
-      <div class="item">
-        <button class="acc-btn">Do you offer video inspection?</button>
-        <div class="acc-panel"><p>Yes, upon request we provide before/after visuals inside your duct lines.</p></div>
-      </div>
-      <div class="item">
-        <button class="acc-btn">Are you insured?</button>
-        <div class="acc-panel"><p>Fully insured and locally based in Fairfax, VA.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact / Footer -->
+  <!-- Footer -->
   <footer id="contact" class="site-footer">
     <div class="container footer-grid">
       <div>
