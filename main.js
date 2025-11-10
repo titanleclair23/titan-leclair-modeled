@@ -1,10 +1,10 @@
-// mobile nav
-const toggle = document.querySelector('.nav-toggle');
-const list = document.querySelector('.nav-list');
-if (toggle && list){
-  toggle.addEventListener('click', ()=> list.classList.toggle('show'));
-}
+// Mobile year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
 
-// copyright year
-const y = document.getElementById('year');
-if (y) y.textContent = new Date().getFullYear();
+// Simple accordion
+document.querySelectorAll('.acc-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const panel = btn.nextElementSibling;
+    panel.style.display = panel.style.display === 'block' ? 'none' : 'block';
+  });
+});
