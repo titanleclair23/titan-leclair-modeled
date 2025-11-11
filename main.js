@@ -1,9 +1,12 @@
-// Year in footer
+// Mobile year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Simple mobile nav toggle (if you want to expand later)
-const toggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('.nav');
-if (toggle && nav) toggle.addEventListener('click', () => {
-  nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-});
+// Toggle mobile menu
+const burger = document.querySelector('.tl-burger');
+const menu = document.querySelector('.tl-menu');
+
+if (burger) {
+  burger.addEventListener('click', () => {
+    document.body.classList.toggle('nav-open');
+  });
+}
