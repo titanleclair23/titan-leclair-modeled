@@ -1,67 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact — Titan Leclair</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  <script defer src="main.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="container flex between center">
-    <a class="brand" href="index.html">Titan Leclair</a>
-    <nav class="nav">
-      <button class="nav-toggle" aria-label="Menu"></button>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="air-duct.html">Air Duct Cleaning</a></li>
-        <li><a href="dryer-vent.html">Dryer Vent</a></li>
-        <li><a href="pressure-washing.html">Pressure Washing</a></li>
-        <li><a class="active btn btn-sm btn-primary" href="contact.html">Request Quote</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
 
-<section class="sub-hero">
-  <div class="container grid two">
-    <div>
-      <h1>Request a Free Quote</h1>
-      <p class="lead">Tell us your address and what you need. We’ll confirm scope and send transparent pricing.</p>
-      <ul class="contact-points">
-        <li><strong>Call/Text:</strong> <a href="tel:17033867924">703-386-7924</a></li>
-        <li><strong>Email:</strong> <a href="mailto:sales@titanleclair.com">sales@titanleclair.com</a></li>
-        <li><strong>Service area:</strong> Fairfax & Northern Virginia</li>
-      </ul>
-    </div>
-    <div>
-      <form class="quote-form card" action="https://formspree.io/f/mwkgrqnb" method="POST">
-        <label>Name<input name="name" required></label>
-        <label>Phone<input name="phone" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Service
-          <select name="service">
-            <option>Air Duct Cleaning</option>
-            <option>Dryer Vent Cleaning</option>
-            <option>Pressure Washing</option>
-          </select>
-        </label>
-        <label>Address (optional)<input name="address"></label>
-        <label>Notes<textarea name="notes" rows="4" placeholder="Tell us about your home or issue..."></textarea></label>
-        <button class="btn btn-primary" type="submit">Request Callback</button>
-        <input type="hidden" name="_subject" value="New Website Lead — Titan Leclair">
-      </form>
-    </div>
-  </div>
-</section>
+<!-- SAME HEADER here -->
 
-<footer class="site-footer">
-  <div class="container">
-    <p><strong>Titan Leclair</strong> — Fairfax, VA • <a href="tel:17033867924">703-386-7924</a></p>
-    <p class="copyright">© <span id="year"></span> Titan Leclair</p>
+<main class="container" style="padding:40px 0">
+  <h1>Contact Titan Leclair</h1>
+  <p>Serving Fairfax and Northern Virginia</p>
+
+  <section id="quote" style="margin:22px 0">
+    <h2>Request a Quote</h2>
+    <form name="quote" method="POST" data-netlify="true" style="max-width:480px">
+      <input type="hidden" name="form-name" value="quote" />
+      <label>Name<br><input type="text" name="name" required></label><br><br>
+      <label>Phone<br><input type="tel" name="phone" required></label><br><br>
+      <label>Service<br>
+        <select name="service" required>
+          <option>Air Duct Cleaning</option>
+          <option>Dryer Vent Cleaning</option>
+          <option>Pressure Washing</option>
+        </select>
+      </label><br><br>
+      <button class="tl-cta" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <h2>Service Area</h2>
+  <p>Fairfax, VA and surrounding areas</p>
+
+  <!-- Google Map Embed -->
+  <iframe
+    style="width:100%;height:340px;border-radius:14px;border:1px solid #ddd"
+    loading="lazy"
+    allowfullscreen
+    src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=9480+Main+Street,+Fairfax,+VA">
+  </iframe>
+
+  <p style="margin-top:10px"><strong>Address:</strong> 9480 Main Street, Suite 1218, Fairfax, VA 22031</p>
+  <p><strong>Phone:</strong> <a href="tel:7033867924">703-386-7924</a></p>
+  <p><strong>Email:</strong> sales@titanleclair.com</p>
+
+</main>
+
+<footer class="tl-footer">
+  <div class="tl-container">
+    <p>© <span id="year"></span> Titan Leclair • Fairfax, VA</p>
   </div>
 </footer>
+
+<script src="main.js"></script>
 </body>
 </html>
